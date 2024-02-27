@@ -280,7 +280,7 @@ html {
 
 .teacher img{
     max-width: 300px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .teacher h2 {
@@ -363,7 +363,11 @@ footer h6 {
     }
     /*Início VÍDEO*/
     .video h2{
-        padding-left: 20px;
+        padding-left: 50px;
+        font-size: 24px;
+    }
+    .video video {
+        max-width: 60%;
     }
 
     /*Início PROJETOS*/
@@ -378,25 +382,32 @@ footer h6 {
     }
 
     .style a{
-        padding: 12px 12px;
-        font-size: 14px;
+        font-size: 20px;
     }
+    .action{
+        padding-left: 40px;
+        
+        
+    }
+    
     /*Início Professores*/
     .teacher {
         flex-direction: column;
-        padding-top: 80px;
+        padding-top: 30px;
         padding-left: 0;
         padding-right: 0;
     }
     .teacher div{
         max-width: 80%;
+        padding-top: 20px;
     }
     .teacher div h2{
         font-size: 30px;
     }
     .teacher img {
         max-width: 40%;
-        margin-top: 30px;
+        margin-top: 10%;
+        margin-bottom: 35px;
     }
     /*Início Imagem*/
     .foto{
