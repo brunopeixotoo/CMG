@@ -1,0 +1,419 @@
+/*Fazendo o reset do CSS*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+/*Aplicando a estilização da fonte no Body*/
+body {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+/*Fazer com que o direcionamento dos itens do cabeçalho sejam suaves*/
+html {
+    scroll-behavior: smooth;
+}
+/*Início Header*/
+.nav {
+    background-color: rgb(54, 54, 54);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9;
+    
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+.nav-list a:hover {
+    color: black;
+}
+
+/*Fim do Header*/
+
+/*Início Main*/
+
+.main {
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url("../imagem/inicio.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+/*Título*/
+.main h1 {
+    color: white;
+    font-size: 54px;
+}
+/*slogan*/
+.main p{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/*buttom*/
+.call-to-action {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 0;
+    padding: 14px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    /*criando intervalo para o aumento do botão*/
+    transition: 0.9s;
+}
+/*buttom muda de tamanho quando usa o mouse*/
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+/*Fim da MAIN*/
+
+/*Início do "Sobre"*/
+
+.about {
+    background-color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div {
+    max-width: 50%;
+    padding-right: 40px;
+    text-align: justify;
+
+}
+
+.about img{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/*Fim do "Sobre"*/
+/*Vídeo*/
+.video{
+    width: 100%;
+    background-color: rgb(231, 209, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.video h2 {
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 80px
+
+}
+
+
+/*Início dos Projetos*/
+
+.projects {
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.projects h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+
+.projects p {
+    color: white;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list img{
+    max-width: 22%;
+    align-items: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.project-list img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*Fim das fotografias e projetos*/
+/*Início Modalidades*/
+.style{
+    background-color:  rgb(231, 209, 7);
+    width: 100%;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.style h2 {
+    padding-bottom: 14px;
+    font-size: 32px;
+   
+}
+.style p {
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.list-style {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.list-style li {
+    font-weight: bold;
+    padding: 8px 8px;
+    margin: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.list-style a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-style li:hover {
+    transform: scale(1.1);
+}
+.action {
+    background-color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.action:hover {
+    transform: scale(1.1);
+}
+/*Fim de Modalidades*/
+/*Início de PROFESSORES*/
+
+.teacher {
+    background-color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher div {
+    max-width: 50%;
+    padding-right: 40px;
+    text-align: justify;
+
+}
+
+.teacher img{
+    max-width: 300px;
+    border-radius: 100%;
+}
+
+.teacher h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/*Foto anterior ao Footer*/
+.foto {
+    width: 100%;
+    background-color: black;
+    height: calc(70vh - 80px);
+    background-image: url("../imagem/imagem9.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+/*Início do Rodapê*/
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-left: 12px;
+}
+footer h6 {
+    margin-top: 60px;
+    padding-bottom: 0;
+}
+
+/*RESPONSIVIDADE*/
+
+/*A partir desse ponto, aqui será aplicado novas formatações de CSS na tela*/
+@media (max-width: 1000px){
+    
+    /*Iníco MAIN*/
+    .main h1{
+        font-size: 45px;
+    }
+    .main p{
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+    /*Fim MAIN*/
+
+    /*Início SOBRE*/
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about div{
+        max-width: 80%;
+    }
+    .about div h2{
+        font-size: 45px;
+    }
+    .about img {
+        max-width: 70%;
+        margin-top: 30px;
+    }
+    /*Início VÍDEO*/
+    .video h2{
+        padding-left: 20px;
+    }
+
+    /*Início PROJETOS*/
+
+    .projects img{
+        width: 27.5%;
+    }
+
+    /*Início MODALIDADES*/
+    .list-style{
+        display: block;
+    }
+
+    .style a{
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    /*Início Professores*/
+    .teacher {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .teacher div{
+        max-width: 80%;
+    }
+    .teacher div h2{
+        font-size: 30px;
+    }
+    .teacher img {
+        max-width: 40%;
+        margin-top: 30px;
+    }
+    /*Início Imagem*/
+    .foto{
+        height: 300px;
+    }
+    /*Início RODAPÊ*/
+    footer{
+        flex-direction: column;
+    }
+    footer h3{
+        font-size: 16px;
+    }
+    footer p{
+        margin: 0;
+        font-size: 12px;
+    }
+    footer h6{
+        font-size: 10px;
+    }
+}
