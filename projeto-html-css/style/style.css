@@ -333,7 +333,8 @@ footer h6 {
     
     /*Início NAV*/
     .nav-list a{
-        font-size: 13px;
+        font-size: 14px;
+        padding: 8px;
     }
     /*Iníco MAIN*/
     .main h1{
@@ -345,6 +346,11 @@ footer h6 {
 
     .main {
         background-size: cover;
+    }
+    
+    .call-to-action{
+        font-size: 15px;
+        border: 0.1px solid gray;
     }
     /*Fim MAIN*/
 
@@ -361,8 +367,11 @@ footer h6 {
     .about div h2{
         font-size: 30px;
     }
+    .about p{
+        line-height: 1.5;
+    }
     .about img {
-        max-width: 70%;
+        max-width: 50%;
         margin-top: 30px;
     }
     /*Início VÍDEO*/
@@ -407,6 +416,9 @@ footer h6 {
     }
     .teacher div h2{
         font-size: 30px;
+    }
+    .teacher p{
+        line-height: 1.5
     }
     .teacher img {
         max-width: 40%;
