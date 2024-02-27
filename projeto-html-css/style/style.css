@@ -331,6 +331,10 @@ footer h6 {
 /*A partir desse ponto, aqui será aplicado novas formatações de CSS na tela*/
 @media (max-width: 1000px){
     
+    /*Início NAV*/
+    .nav-list a{
+        font-size: 13px;
+    }
     /*Iníco MAIN*/
     .main h1{
         font-size: 45px;
@@ -355,7 +359,7 @@ footer h6 {
         max-width: 80%;
     }
     .about div h2{
-        font-size: 45px;
+        font-size: 30px;
     }
     .about img {
         max-width: 70%;
